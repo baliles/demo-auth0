@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heroku Shield for Compliance Apps - Demo Hub</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+
+</head>
+<body>
+
+  <!--
+    Base Global Header component
+    https://www.lightningdesignsystem.com/components/global-header/
+  -->
+  <header class="slds-global-header_container"><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Navigation</a><a href="javascript:void(0);" class="slds-assistive-text slds-assistive-text--focus">Skip to Main Content</a>
+    <div class="slds-global-header slds-grid slds-grid--align-spread">
+      <div class="slds-global-header__item">
+        <div class="slds-global-header__logo" style="width:175px">
+          <img src="/assets/poweredbylogo.png" alt="" />
+        </div>
+      </div>
+      <div class="slds-global-header__item slds-global-header__item--search">
+        <div class="slds-form-element slds-lookup">
+          <label class="slds-assistive-text" for="global-search-01">Search Heroku DevCenter</label>
+          <div class="slds-form-element__control lookup__search-control slds-input-has-icon slds-input-has-icon--left">
+            <svg aria-hidden="true" class="slds-input__icon">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+            </svg>
+            <input id="global-search-01" class="slds-input slds-lookup__search-input" type="search" placeholder="Search Heroku DevCenter" />
+          </div>
+        </div>
+      </div>
+      <ul class="slds-global-header__item slds-grid slds-grid--vertical-align-center">
+        <li class="slds-dropdown-trigger slds-dropdown-trigger--click slds-m-left--x-small">
+          <button class="slds-button" title="person name" aria-haspopup="true">
+            <span class="slds-avatar slds-avatar--circle slds-avatar--medium">
+              <img src="/assets/images/avatar2.jpg" alt="person name" />
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!--
+    Placeholder to push the context bar down
+  -->
+  <div class="app-header-placeholder"></div>
+
+  <!--
+    Navigation Bar component
+    https://www.lightningdesignsystem.com/components/global-navigation/
+  -->
+  <div class="slds-context-bar">
+    <div class="slds-context-bar__primary slds-context-bar__item--divider-right">
+      <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--click slds-no-hover">
+        <div class="slds-context-bar__icon-action">
+          <a href="javascript:void(0);" class="slds-icon-waffle_container slds-context-bar__button">
+            <div class="slds-icon-waffle">
+              <div class="slds-r1"></div>
+              <div class="slds-r2"></div>
+              <div class="slds-r3"></div>
+              <div class="slds-r4"></div>
+              <div class="slds-r5"></div>
+              <div class="slds-r6"></div>
+              <div class="slds-r7"></div>
+              <div class="slds-r8"></div>
+              <div class="slds-r9"></div>
+            </div>
+            <span class="slds-assistive-text">Open App Launcher</span>
+          </a>
+        </div>
+        <span class="slds-context-bar__label-action slds-context-bar__app-name">
+          <span class="slds-truncate">MedSmart Hub</span>
+        </span>
+      </div>
+    </div>
+    <nav class="slds-context-bar__secondary" role="navigation">
+      <ul class="slds-grid">
+          <li class="slds-context-bar__item">
+              <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+                <span class="slds-truncate">Overview</span>
+              </a>
+              
+            </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Use Case</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Demo Snapshot</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://s3.amazonaws.com/bucketeer-5e9d2f42-1039-486c-a74b-5eb4b8e724f1/UseCase.png" target="iframe">Demo Overview</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://s3.amazonaws.com/bucketeer-5e9d2f42-1039-486c-a74b-5eb4b8e724f1/DataSets.png" target="iframe">Dataset Overview</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://s3.amazonaws.com/bucketeer-5e9d2f42-1039-486c-a74b-5eb4b8e724f1/Architecture.png" target="iframe">Architecture Overview</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+         <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">The Heroku Apps</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Shield Space</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/teams/org-hipaa-ofs/apps" target="iframe">MedSmart Shield Space</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/hls-dashboard-shield" target="iframe">MedSmart: UX</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/hls-datahub-shield" target="iframe">MedSmart: Datalake</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/hls-kafka-shield" target="iframe">MedSmart: Kafka Cluster</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://dashboard.heroku.com/apps/hls-sparkcluster-shield" target="iframe">MedSmart: Spark Cluster</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">The Demo</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">MedSmart Solution</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://hls-dashboard-shield.herokuapp.com/" target="iframe">MedSmart Physician UX</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://fx-datalake.herokuapp.com/public/dashboard/34bbb87e-d123-4149-bf18-6df2573ee852" target="iframe">MedSmart Reporting UX</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://gs1.sdd.salesforce.com/story/5290" target="iframe">MedSmart Data Discovery UX</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://addons-sso.heroku.com/apps/6f0acb6f-e242-41cb-8883-a055f9bfda40/addons/0fdc99c2-3754-4269-b6fb-28e39f15089e" target="iframe">MedSmart Kafka Stream</a></span>
+                </a>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="http://hls-sparkcluster-shield.herokuapp.com/" target="iframe">MedSmart Spark Analytics</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+       <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">+ Health Cloud</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Healthcloud etc.</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="https://hlshub.my.salesforce.com" target="iframe">Health Hub</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+        <li class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger--hover" aria-haspopup="true">
+          <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+            <span class="slds-truncate">Architecture</span>
+          </a>
+          <div class="slds-context-bar__icon-action slds-p-left--none" tabindex="0">
+            <button class="slds-button slds-button--icon slds-context-bar__button" tabindex="-1">
+              <svg aria-hidden="true" class="slds-button__icon">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown"></use>
+              </svg>
+              <span class="slds-assistive-text">Open menu item submenu</span>
+            </button>
+          </div>
+          <div class="slds-dropdown slds-dropdown--right">
+            <ul class="dropdown__list" role="menu">
+              
+              <li class="slds-dropdown__header slds-has-divider--top-space" role="separator">
+                <span class="slds-text-title--caps">Diagrams</span>
+              </li>
+              <li class="slds-dropdown__item" role="presentation">
+                <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                  <span class="slds-truncate"><a href="card.html" target="iframe">MedSmart Architecture</a></span>
+                </a>
+              </li>
+              </ul>
+          </div>
+        </li>
+      
+        
+        
+        </li>
+        </ul>
+        </div>
+        </li>
+       
+       
+      </ul>
+    </nav>
+  </div>
+
+  <main class="app-wrapper">
+    {% block content %}
+<div -webkit-overflow-scrolling: touch; overflow: auto;>
+<iframe class="iframe" name="iframe" src="http://www.heroku.com" width="100%" marginwidth="0" style="border: none; max-width:100%;"></iframe>
+</div>    {% endblock %}
+  </main>
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/svg4everybody.min.js"></script>
+
+  <script>svg4everybody();</script>
+</body>
+</html>
